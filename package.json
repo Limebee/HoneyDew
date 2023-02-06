@@ -1,6 +1,6 @@
 {
   "engines": {
-    "node": "14.20.1"
+    "node": "19.5.0"
   },
   "name": "honeydew",
   "version": "1.0.0",
