@@ -7,7 +7,7 @@
   "description": "Allows juice bar baristas to track their orders",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "postcss public/css/input.css -o  public/css/output.css -w",
     "start": "node server.js"
   },
   "repository": {
