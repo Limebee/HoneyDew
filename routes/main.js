@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const authController = require('../controllers/auth') 
 const homeController = require('../controllers/home')
-const motivationController = require('../controllers/motivation')
+const motivationController = require('../controllers/drinks')
 const { ensureAuth, ensureGuest } = require('../middleware/auth')
 
 router.get('/', homeController.getIndex)
@@ -11,7 +11,7 @@ router.post('/login', authController.postLogin)
 router.get('/logout', authController.logout)
 router.get('/signup', authController.getSignup)
 router.post('/signup', authController.postSignup)
-router.get('/motivation', motivationController.getIndex)
+router.get('/drinks', drinksController.getIndex)
 
 
 module.exports = router
