@@ -7,7 +7,7 @@
   "description": "Allows juice bar baristas to track their orders",
   "main": "server.js",
   "scripts": {
-    "build": "tailwindcss -i public/css/input.css -o  public/css/output.css --minify",
+    "build": "postcss public/css/input.css -o  public/css/output.css -w",
     "start": "node server.js"
   },
   "repository": {
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/Limebee/honeydew#readme",
   "dependencies": {
+    "autoprefixer": "^10.4.14",
     "bcrypt": "^5.1.0",
     "connect-mongo": "^4.6.0",
     "daisyui": "^2.51.5",
