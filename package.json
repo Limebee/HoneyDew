@@ -23,6 +23,7 @@
   "dependencies": {
     "autoprefixer": "^10.4.14",
     "bcrypt": "^5.1.0",
+    "concurrently": "^8.0.1",
     "connect-mongo": "^4.6.0",
     "daisyui": "^2.51.5",
     "dotenv": "^16.0.3",
