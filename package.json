@@ -8,7 +8,7 @@
   "main": "server.js",
   "scripts": {
     "build": "postcss -o  public/css/output.css --minify",
-    "start": "concurrently 'postcss public/css/input.css -o  public/css/output.css -w' node server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
