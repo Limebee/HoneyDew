@@ -2,7 +2,7 @@
 module.exports = {
   important: true,
   mode: "jit",
-  content: ["./views/**/*.{html,js,ejs}", "./public/**/*.{html,js,ejs}"],
+  purge: ["./views/**/*.{html,js,ejs}", "./public/**/*.{html,js,ejs}"],
   theme: {
     extend: {},
   },
