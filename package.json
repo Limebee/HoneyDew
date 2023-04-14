@@ -7,8 +7,8 @@
   "description": "Allows juice bar baristas to track their orders",
   "main": "server.js",
   "scripts": {
-    "build": "postcss -o  public/css/output.css --minify",
-    "start": "node server.js"
+    "build": "postcss public/css/input.css -o  public/css/output.css -w",
+    "start": "concurrently node server.js 'postcss -o  public/css/output.css --minify'"
   },
   "repository": {
     "type": "git",
