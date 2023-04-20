@@ -18,49 +18,61 @@
             <div class="alert alert-warning" role="alert"><%= el.msg %></div>
         <% }) %>    
     <% } %>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container px-lg-5">
-            <a class="navbar-brand" href="/"><img src="icon.svg"  width="100" height="60" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/signup">Signup</a></li>
-                </ul>
-            </div>
+    <header>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Homepage</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>About</a></li>
+            </ul>
+          </div>
         </div>
-    </nav>
-    <div class="container">
-        <div class="row">
-          <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-            <div class="card border-0 shadow rounded-3 my-5">
-              <div class="card-body p-4 p-sm-5">
-                <h5 class="card-title text-center mb-5 fw-light fs-5">Login</h5>
-                <form action="/login" method="POST">
-                  <div class="form-floating mb-3">
-                    <input type="email" class="form-control" name="email" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Email address</label>
-                  </div>
-                  <div class="form-floating mb-3">
-                    <input type="password" class="form-control" name="password" id="floatingPassword" placeholder="Password">
-                    <label for="floatingPassword">Password</label>
-                  </div>
-                  <div class="form-check mb-3">
-                  </div>
-                  <div class="d-grid">
-                    <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit">Login</button>
-                  </div>
-                  <hr class="my-4">
-                  <div class="d-grid mb-2">
-                  </div>
-                  <div class="d-grid">
-                    </button>
-                  </div>
-                </form>
-              </div>
+        <div class="navbar-center">
+          <a class="btn btn-ghost normal-case text-xl"><i class="fa-regular fa-lemon fa-2xl"></i></a>
+        </div>
+        <div class="navbar-end">
+          <button class="btn">
+            <div class="indicator">
+              <a href="/login">Login</a>
+            </div>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="hero min-h-screen bg-base-200">
+      <div class="hero-content flex-col lg:flex-row-reverse">
+        <div class="text-center lg:text-left">
+          <h1 class="text-5xl font-bold">Login now!</h1>
+          <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+        </div>
+        <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+          <div class="card-body">
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Email</span>
+              </label>
+              <input type="text" placeholder="email" class="input input-bordered" />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text">Password</span>
+              </label>
+              <input type="text" placeholder="password" class="input input-bordered" />
+              <label class="label">
+                <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+              </label>
+            </div>
+            <div class="form-control mt-6">
+              <button class="btn btn-primary">Login</button>
             </div>
           </div>
         </div>
       </div>
+    </div>
 </body>
 </html>
