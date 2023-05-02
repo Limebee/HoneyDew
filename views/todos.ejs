@@ -35,8 +35,8 @@
   </header>
 <body>
     <h1>Orders</h1>
-    <div class="center-to" class="contain">
-        <div class="card-body" class="max-w-sm rounded overflow-hidden shadow-lg">
+    <div class="center-to" class="contain" class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="card-body">
     <% todos.forEach( el => { %>
             <div class="card"class='todoItem' data-id='<%=el._id%>'>
                 <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
