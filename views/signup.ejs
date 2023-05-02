@@ -10,12 +10,12 @@
 <body class="h-full">
     <% if (locals.messages.errors) { %>
         <% messages.errors.forEach( el => { %>
-            <div class="alert alert-warning" role="alert"><%= el.msg %></div>
+            <div class="alert alert-danger"><%= el.msg %></div>
         <% }) %>    
     <% } %>
     <% if (locals.messages.info) { %>
         <% messages.info.forEach( el => { %>
-            <div class="alert alert-warning" role="alert"><%= el.msg %></div>
+            <div class="alert alert-danger"><%= el.msg %></div>
         <% }) %>    
     <% } %>
     <header>
