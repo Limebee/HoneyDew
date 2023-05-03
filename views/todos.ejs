@@ -35,11 +35,11 @@
   </header>
 <body>
     <h1>Orders</h1>
-    <div class="flex justify-items-center" class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-        <div class="card-body">
+    <div>
+        <div class="card-body" class="flex justify-items-center" class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <% todos.forEach( el => { %>
             <div class="card"class='todoItem' data-id='<%=el._id%>'>
-                <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
+                <span class='<%= el.line-through decoration-green-200 === true ? 'completed' : 'not'%>'><%= el.todo %></span>
                 <span class='del'> Clear </span>
         </div>
     <% }) %> 
