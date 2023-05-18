@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/public/css/output.css" />
+    <link rel="stylesheet" href="/public/css/todos.css" />
 </head>
 <header>
     <div class="navbar bg-base-100">
@@ -34,11 +35,13 @@
     </div>
   </header>
 <body>
+  <div class="flex justify-center">
     <h1>Orders</h1>
-    <div>
-        <div class="card-body">
+  </div>
+    <div class="flex justify-center">
+        <div>
     <% todos.forEach( el => { %>
-            <div class="card"class='todoItem' data-id='<%=el._id%>'>
+            <div class="card w-96 bg-primary text-primary-content"  class='todoItem' data-id='<%=el._id%>'>
                 <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
                 <span class='del'> Clear </span>
         </div>
@@ -46,7 +49,7 @@
     </div>   
 </div>
 <div class="box">
-    <div class="small-box">
+    <div class="flex justify-center">
         <div class="close">
     <form action="/todos/createTodo" method='POST'>
  <label for="juices">Add an Order:</label>
@@ -54,27 +57,21 @@
   <select id="drink" name='todoItem'>
     <option value="abc">ABC</option>
     <option value="mean green">Mean Green</option>
-    <option value="immune booster">Immune Booster</option>
-    <option value="green goodness">Green Goodness</option>
     <option value="lemon flush">Lemon Flush</option>
     <option value="liver cleanse">Liver Cleanse</option>
     <option value="liquid sunshine">Liquid Sunshine</option>
-    <option value="celery craze">Celery Craze</option>
-    <option value="fresh green">Fresh Green</option>
+    <option value="dragon fly">Dragon fly</option>
     <option value="aloha suprise">Aloha Suprise</option>
-    <option value="power booster">Power Booster</option>
-    <option value="mango blast">Mango Blast</option>
+    <option value="boost shot">Boost Shot</option>
     <option value="berry bliss">Berry Bliss</option>
     <option value="peanut butter crunch">Peanut Butter Crunch</option>
-    <option value="its nuts">Its Nuts</option>
-    <option value="mint choclate chip">Mint Chocolate Chip</option>
-    <option value="morning glory">Morning Glory</option>
     <option value="strawberry special">Strawberry Special</option>
   </select>
   <select name='todoItem'>
   <option value="12oz">12oz</option>
     <option value="16oz">16oz</option>
     <option value="24oz">24oz</option>
+    <option value="4oz">4oz</option>
   </select>
   <input type="number" id="points" name='todoItem'step="1" placeholder="quanity">
   <input type="text" id="fname" name='todoItem' placeholder="Notes">
