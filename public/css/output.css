@@ -3113,6 +3113,9 @@ select {
 .justify-between {
   justify-content: space-between !important;
 }
+.justify-items-center {
+  justify-items: center !important;
+}
 .space-y-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0 !important;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse))) !important;
@@ -3189,6 +3192,9 @@ select {
 .py-6 {
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important;
+}
+.pb-10 {
+  padding-bottom: 2.5rem !important;
 }
 .pt-10 {
   padding-top: 2.5rem !important;
