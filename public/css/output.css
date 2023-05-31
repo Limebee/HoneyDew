@@ -3037,10 +3037,6 @@ select {
 .m-auto {
   margin: auto !important;
 }
-.mx-auto {
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
 .mt-10 {
   margin-top: 2.5rem !important;
 }
@@ -3058,9 +3054,6 @@ select {
 }
 .grid {
   display: grid !important;
-}
-.h-10 {
-  height: 2.5rem !important;
 }
 .h-5 {
   height: 1.25rem !important;
@@ -3088,9 +3081,6 @@ select {
 }
 .w-96 {
   width: 24rem !important;
-}
-.w-auto {
-  width: auto !important;
 }
 .w-full {
   width: 100% !important;
@@ -3169,6 +3159,10 @@ select {
   padding-left: 0.75rem !important;
   padding-right: 0.75rem !important;
 }
+.px-4 {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
 .px-6 {
   padding-left: 1.5rem !important;
   padding-right: 1.5rem !important;
@@ -3188,6 +3182,10 @@ select {
 .py-12 {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
+}
+.py-5 {
+  padding-top: 1.25rem !important;
+  padding-bottom: 1.25rem !important;
 }
 .py-6 {
   padding-top: 1.5rem !important;
@@ -3444,6 +3442,11 @@ select {
 
   .lg\:col-span-8 {
     grid-column: span 8 / span 8 !important;
+  }
+
+  .lg\:px-5 {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
   }
 
   .lg\:px-8 {
