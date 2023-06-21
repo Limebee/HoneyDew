@@ -13,6 +13,7 @@ const todoRoutes = require('./routes/todos')
 
 require('dotenv').config({path: './config/.env'})
 
+
 mongoose.set('strictQuery', false);
 
 
