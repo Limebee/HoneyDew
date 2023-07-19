@@ -3084,6 +3084,9 @@ select {
 .inset-0 {
   inset: 0px !important;
 }
+.z-\[1\] {
+  z-index: 1 !important;
+}
 .col-span-3 {
   grid-column: span 3 / span 3 !important;
 }
@@ -3138,9 +3141,6 @@ select {
 .h-32 {
   height: 8rem !important;
 }
-.h-5 {
-  height: 1.25rem !important;
-}
 .h-auto {
   height: auto !important;
 }
@@ -3155,9 +3155,6 @@ select {
 }
 .w-3\/5 {
   width: 60% !important;
-}
-.w-5 {
-  width: 1.25rem !important;
 }
 .w-52 {
   width: 13rem !important;
@@ -3231,17 +3228,16 @@ select {
   --tw-border-opacity: 1 !important;
   border-color: rgb(229 231 235 / var(--tw-border-opacity)) !important;
 }
-.border-neutral-200 {
-  --tw-border-opacity: 1 !important;
-  border-color: rgb(229 229 229 / var(--tw-border-opacity)) !important;
+.border-transparent {
+  border-color: transparent !important;
 }
 .bg-\[\#D98338\] {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(217 131 56 / var(--tw-bg-opacity)) !important;
 }
-.bg-\[\#F2D055\] {
+.bg-\[\#FFBE42\] {
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(242 208 85 / var(--tw-bg-opacity)) !important;
+  background-color: rgb(255 190 66 / var(--tw-bg-opacity)) !important;
 }
 .bg-\[\#FFFACD\] {
   --tw-bg-opacity: 1 !important;
@@ -3258,10 +3254,6 @@ select {
 .bg-base-100 {
   --tw-bg-opacity: 1 !important;
   background-color: hsl(var(--b1) / var(--tw-bg-opacity)) !important;
-}
-.bg-blue-600 {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity)) !important;
 }
 .bg-gray-900 {
   --tw-bg-opacity: 1 !important;
@@ -3315,6 +3307,9 @@ select {
 .pb-10 {
   padding-bottom: 2.5rem !important;
 }
+.pb-20 {
+  padding-bottom: 5rem !important;
+}
 .pb-40 {
   padding-bottom: 10rem !important;
 }
@@ -3362,9 +3357,6 @@ select {
 .text-black {
   --tw-text-opacity: 1 !important;
   color: rgb(0 0 0 / var(--tw-text-opacity)) !important;
-}
-.text-black\/90 {
-  color: rgb(0 0 0 / 0.9) !important;
 }
 .text-blue-600 {
   --tw-text-opacity: 1 !important;
@@ -3603,6 +3595,10 @@ select {
 
   .lg\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr)) !important;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row !important;
   }
 
   .lg\:flex-row-reverse {
