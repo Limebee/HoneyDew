@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/public/css/todos.css" />
 </head>
 <header>
-    <div class="navbar bg-[#D98338]">
+    <nav class="navbar bg-[#D98338]">
       <div class="navbar-start">
         <div class="dropdown">
           <label tabindex="0" class="btn btn-ghost btn-circle">
@@ -36,19 +36,19 @@
           </div>
         </button>
       </div>
-    </div>
+    </nav>
   </header>
 <body class="bg-[#ffb100]">
-  <div class="hero min-h-screen">
-    <div class="hero-content">
-      <div class="max-w-md">
-  <div class="flex justify-center">
-    <h1>Hey, <%= user.userName %></h1>
-  </div>
-  <div class="flex justify-center pt-20 pb-10">
-    <h1 class="text-xl"> <%= left %> Orders</h1>
-  </div>
-  <div class="flex justify-center pb-40">
+  <main class="hero min-h-screen">
+    <section class="hero-content">
+      <section class="max-w-md">
+        <div class="flex justify-center">
+            <h1>Hey, <%= user.userName %></h1>
+        </div>
+          <div class="flex justify-center pt-20 pb-10">
+            <h1 class="text-xl"> <%= left %> Orders</h1>
+          </div>
+  <section class="flex justify-center pb-40">
     <div class="card w-96 h-auto bg-[#FFFACD] shadow-xl p-10">
           <div class="card-body items-center text-center p-10">
     <% todos.forEach( el => { %>
@@ -60,10 +60,10 @@
         </div>
     <% }) %>
       </div>   
-</div>
-</div>
-<div>
-    <div class="flex justify-center">
+    </div>
+  </div>
+</section>
+<section class="flex justify-center">
   <div class="w-full">
     <form action="/todos/createTodo" method='POST' class="">
  <label for="juices">Add an Order:</label>
@@ -91,16 +91,16 @@
   </select>
   <input type="number" id="points" name='todoItem'step="1" placeholder="quanity" class="input input-bordered input-warning max-w-xs">
   <input type="text" id="fname" name='todoItem' placeholder="Notes" class="input input-bordered input-warning max-w-xs">
-        <div class="flex justify -enter">
-  <button class="btn btn-wide btn-primary" type="submit" id="add" placeholder="quanity">Add</button>
-        </div>
-</form>
+    <div class="flex justify-center">
+      <button class="btn btn-wide btn-primary" type="submit" id="add" placeholder="quanity">Add</button>
+    </div>
+    </form>
           </div>
-        </div>
+        </section>
       </div>
     </div>
-  </div>
-</div>
+  </section>
+</main>
     <script src="js/main.js"></script>
     <script src="https://kit.fontawesome.com/c15b095f83.js" crossorigin="anonymous"></script>
 </body>
