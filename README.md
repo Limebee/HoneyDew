@@ -10,7 +10,10 @@ Link to project: https://honeydewdrinks.onrender.com/
 
 Tech Used: Javascript, CSS, Node.js, MongoDB, EJS
 
-This app is built with a node.js backend with mongodb as the database. I used passport for the autentication. I used EJS as the templating language for this project. I used a mixure of vanilla css and Tailwind for this project. This project uses an api to retrive data for the menu index. The api is called using javascript.
+This a CRUD app built with a node.js backend with mongodb as the database. I organized this project using MVC architecture. I used EJS as the templating language for this project. I used a mixture of vanilla css and Tailwind for this project. This project uses an api to retrieve data for the menu index. The api is called using javascript.
+
+
+
 
 # Optimizations
 I would add feature that would allow each order to have multiple different drinks.
