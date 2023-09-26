@@ -16,4 +16,7 @@ This a CRUD app built with a node.js backend with mongodb as the database. I org
 
 
 # Optimizations
-I would add feature that would allow each order to have multiple different drinks.
+I would add feature that would allow each order to have multiple different drinks. I would also like to add a feature edit orders in case someone wants to change it. Another feature I would like to add is a way to track how many times a drink was ordered. I would have a chart that shows how popular each drink is.
+
+# Lessons Learned
+This project helped me to learn more about fullstack web apps.
