@@ -1,6 +1,6 @@
 {
   "engines": {
-    "node": "18.x"
+    "node": ">=18.x"
   },
   "name": "honeydew",
   "version": "1.0.0",
@@ -36,12 +36,13 @@
     "morgan": "^1.10.0",
     "passport": "^0.5.3",
     "passport-local": "^1.0.0",
-    "postcss": "^8.4.21",
     "tailwindcss": "^3.3.1",
     "validator": "^13.9.0"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.3",
+    "cssnano": "^6.0.3",
+    "postcss": "^8.4.33",
     "postcss-cli": "^10.1.0"
   }
 }
